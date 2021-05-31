@@ -407,7 +407,7 @@ impl TRS {
     /// let t2 = parse_trs(&mut sig,
     /// "B = A;
     /// C = D | E;
-    /// F(y_) = G;").expect("parse of A = B; C = D | E; F(y_) = G;");
+    /// F(y_) = G;").expect("parse of B = A; C = D | E; F(y_) = G;");
     ///
     /// assert!(!TRS::unifies(t0, t2));
     /// ```
@@ -446,7 +446,7 @@ impl TRS {
     /// let t2 = parse_trs(&mut sig,
     /// "B = A;
     /// C = D | E;
-    /// F(y_) = G;").expect("parse of A = B; C = D | E; F(y_) = G;");
+    /// F(y_) = G;").expect("parse of B = A; C = D | E; F(y_) = G;");
     ///
     /// assert!(!TRS::pmatches(t0.clone(), t2));
     ///
