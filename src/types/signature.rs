@@ -724,7 +724,7 @@ mod tests {
             (0, Some("K".to_string())),
         ]);
 
-        let ops: Vec<String> = sig.operators().iter().map(|op| op.display()).collect();;
+        let ops: Vec<String> = sig.operators().iter().map(|op| op.display()).collect();
 
         assert_eq!(ops, vec![".", "S", "K"]);
     }
