@@ -130,7 +130,7 @@ impl TRS {
     ///
     /// See [`determinism`] for more information.
     ///
-    /// [`Deterministic System`]: http://en.wikipedia.org/wiki/Deterministic_system
+    /// [`determinism`]: http://en.wikipedia.org/wiki/Deterministic_system
     ///
     /// # Examples
     ///
@@ -419,9 +419,9 @@ impl TRS {
                 .zip(trs2.rules.iter())
                 .all(|(r1, r2)| Rule::unify(r1, r2).is_some())
     }
-    /// Does one TRS [`match`] another?
+    /// Does one TRS [`Pattern Matching`] another?
     ///
-    /// See [`match`] for more information.
+    /// See [`Pattern Matching`] for more information.
     ///
     /// [`Pattern Matching`]: https://en.wikipedia.org/wiki/Pattern_matching
     ///
